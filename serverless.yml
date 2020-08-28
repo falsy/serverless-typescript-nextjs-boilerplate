@@ -1,0 +1,16 @@
+service: typescript-nextjs-boilerplate
+provider:
+  name: aws
+  runtime: nodejs12.x
+  stage: dev
+  region: ap-northeast-2
+plugins:
+  - serverless-nextjs-plugin
+custom:
+  name: typescript-nextjs-nextjs
+  serverless-nextjs:
+    assetsBucketName: "typescript-nextjs-nextjs-${self:provider.stage}"
+    cloudFront: true
+package:
+  exclude:
+    - ./**
