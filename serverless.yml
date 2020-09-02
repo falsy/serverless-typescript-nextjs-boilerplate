@@ -1,4 +1,4 @@
-service: typescript-nextjs-boilerplate
+service: ts-serverless-nextjs
 provider:
   name: aws
   runtime: nodejs12.x
@@ -7,9 +7,9 @@ provider:
 plugins:
   - serverless-nextjs-plugin
 custom:
-  name: typescript-nextjs-nextjs
+  name: ts-serverless-nextjs
   serverless-nextjs:
-    assetsBucketName: "typescript-nextjs-nextjs-${self:provider.stage}"
+    assetsBucketName: "ts-serverless-nextjs-${self:provider.stage}"
     cloudFront: true
 package:
   exclude:

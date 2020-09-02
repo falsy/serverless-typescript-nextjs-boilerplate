@@ -7,9 +7,9 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "deploy": "serverless deploy --aws-profile falsy"
+    "deploy": "serverless deploy"
   },
-  "author": "",
+  "author": "falsy",
   "license": "WTFPL",
   "dependencies": {
     "next": "^9.5.2",
